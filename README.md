@@ -2,6 +2,7 @@
 A JavaScript-based simulation of tree and plant growth using L-systems.
 
 3D real time rendering of a garden, where put trees and plants. It is based on Lindenmayer System, that consists of an alphabet simbols with some production rules. The algorithm starts with an axiom (an initial string) and expands it iteratively by applying the rules a defined number of times. The resulting string is then interpreted geometrically to generate branches and plant structures, following a fractal-like growth pattern.
+Trees are generated at a random position. 
 
 The project was written in Javascript with Three.js framework, which is based on WebGL API.
 To start the project in a local environment use Node.js which also allows you to manage dependencies via npm (Node Package Manager).
