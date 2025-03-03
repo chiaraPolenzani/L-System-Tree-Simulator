@@ -16,10 +16,10 @@ In this demo, you can:
 - Render with the button.
 
   
-<img src="https://github.com/user-attachments/assets/f565cd4b-a9d7-4403-a89b-5520a87f7e8e" width="300">
+<img src="https://github.com/user-attachments/assets/f565cd4b-a9d7-4403-a89b-5520a87f7e8e" width="300" height="auto">
 
-<img src="https://github.com/user-attachments/assets/659ae429-accf-49a5-af5a-ae1ff05328b0" width="300">
+<img src="https://github.com/user-attachments/assets/659ae429-accf-49a5-af5a-ae1ff05328b0" width="300" height="auto">
 
-<img src="https://github.com/user-attachments/assets/3ecf20f5-eddc-4e23-9454-a8214e9fa579" width="300">
+<img src="https://github.com/user-attachments/assets/3ecf20f5-eddc-4e23-9454-a8214e9fa579" width="300" height="auto">
 
 
