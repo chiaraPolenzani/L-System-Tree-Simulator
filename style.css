@@ -1,0 +1,128 @@
+
+#scene-container {
+    float: left;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+#parameters-container {
+    float: right;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 250px;
+    padding: 10px;
+    background-color: rgba(8, 11, 43, 0.4);  /*sfondo scuro con trasparenza */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 10;  /*sopra la scena */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#render-button, #tree-selector, #quantity-selector, #iterations-range, #light-position-selector {
+    position: relative;
+}
+
+#tree-type-container, #tree-number-container, #iterations, #light-position-container {
+    margin-bottom: 10px;
+}
+
+.title {   
+    color: white;
+    text-align: center;
+}
+
+.parameter-name {
+    cursor: default;
+    display: inline-block;
+    width: 35%; /* Imposta la larghezza dell'etichetta */
+    text-align: left; /* Allinea il testo a sinistra */
+    margin-right: 5px; /* Aggiungi spazio tra l'etichetta e il menu a tendina */
+    margin-left: 10px;
+}
+
+select {
+    width: 98%; /* larghezza del menù a tendina */
+    padding: 5px;
+    background-color: rgba(255, 255, 255, 0.6);
+    border: 1px solid rgba(4, 5, 90, 0.4);
+    border-radius: 6px;
+    outline: none;
+    display: block;
+}
+
+select:focus {
+    border-color: rgba(4, 5, 90, 0.8); /* Blu più scuro */
+    box-shadow: 0 0 10px rgba(4, 5, 90, 0.5); /* Effetto leggero di glow blu */
+}
+
+.value {
+    display: inline-block;
+    width: 55%;
+}
+
+.line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Allinea verticalmente gli elementi */
+    width: 100%;
+}
+
+input[type="range"] {
+    width: 70%;
+    margin-top: 10px;
+    -webkit-appearance: none;
+    appearance: none;
+    height: 5px;
+    background: #ddd;
+    border-radius: 5px;
+    outline: none;
+    transition: 0.3s;
+}
+  
+input[type="range"]:hover {
+    background: #ccc;
+}
+  
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background: #4CAF50;
+    border-radius: 50%;
+    cursor: pointer;
+}
+  
+input[type="range"]::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    background: #4CAF50;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.button {
+    width: 100%; 
+    background-color: rgba(4, 5, 90, 0.4);
+    border-radius: 30px;
+    cursor: pointer;
+    height: 30px;
+    border: none;
+    color: antiquewhite;
+    font-size: medium;
+    outline: none;
+}
+button:hover {
+    border-color: rgba(150, 151, 243, 0.8); 
+    box-shadow: 0 0 10px rgba(161, 162, 236, 0.5); 
+}
+
+  
