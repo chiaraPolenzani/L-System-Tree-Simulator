@@ -17,7 +17,7 @@ let lastMouseX = 0; // posizione precedente del mouse
 
 function init() { // sezione di set-up di progetto 
   
-  container = document.getElementById("scene-container");  // elemento HTML con l'id scene-container
+  container = document.getElementById("scene-container"); 
   
   scene = new THREE.Scene();  
   scene.background = new THREE.Color(0x0096ff);  // Cielo azzurro
@@ -161,7 +161,7 @@ function onMouseDown(event) {
   mouse.x = (event.clientX / window.innerWidth) * 2 - 1;
   mouse.y = - (event.clientY / window.innerHeight) * 2 + 1;
 
-  raycaster.setFromCamera(mouse, camera); // Il raycaster è un oggetto che lancia un raggio nella scena 3D dalla camera
+  raycaster.setFromCamera(mouse, camera);
   const intersects = raycaster.intersectObject(ground);
   if (intersects.length > 0) {
     isMouseDown = true; // Imposta lo stato su "trascinamento attivo"
@@ -218,15 +218,6 @@ function onKeyDown(event) {
         newPosition.addScaledVector(right, moveSpeed); // Sposta a sx
         newLookAt.addScaledVector(right, moveSpeed);
     }
-
-    /*// Applichiamo i limiti solo sugli assi X e Z
-    if (
-        newPosition.x >= minLimit && newPosition.x <= maxLimit &&
-        newPosition.z >= minLimit && newPosition.z <= maxLimit
-    ) {
-        camera.position.copy(newPosition);
-        controls.target.copy(newLookAt);
-    }*/
         camera.position.copy(newPosition);
         controls.target.copy(newLookAt);
 }
@@ -254,7 +245,7 @@ document.getElementById("render-button").addEventListener("click", function() {
 
   // Avvia la generazione degli alberi in posizione casuale
   for(let i=0; i<quantity; i++){
-    // La camera è a z=200 quindi gli oggetti per apparire davanti a essa devono avere z<200.
+    // La camera è a z=200 quindi gli oggetti per apparire davanti a essa devono avere z<=200.
     let x = Math.random() * 800 - 400;  // Random tra -400 e 400
     let z = Math.random() * 600 - 400;  // Random tra -400 e 200 
     let treeHeight = model.branch_length;  // Altezza del tronco principale
