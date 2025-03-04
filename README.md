@@ -8,7 +8,7 @@ The project was written in Javascript with Three.js framework, which is based on
 To start the project in a local environment use Node.js which also allows you to manage dependencies via npm (Node Package Manager).
 From the project folder the npm run start command starts the tree and plant growth simulator. 
 
-In this demo, you can:
+In this demo you will be able to:
 
 - Select the tree type.
 - Select the number of trees to display.
